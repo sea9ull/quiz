@@ -1,0 +1,54 @@
+nav.admin-menu{
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    z-index: 200;
+    text-align: center;
+    bottom: 0
+}
+button {
+    appearance: button;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px;
+    margin: 0px;
+    overflow: visible;
+    padding: 0.4rem 1rem;
+}
+.nav-button {
+    margin-top: 0px;
+    margin-right: 15px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    height: 2.8rem;
+    box-shadow: rgba(0, 0, 0, 0.6) 1px 1px 3px;
+    background: #0f8ebd;
+    border-radius: 1.4rem;
+}
+
+.master-contents {
+    width: 80vw;
+    height: 80vh;
+    margin: 3rem auto;
+}
+
+table.score{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFF;
+}
+table td{
+    padding: 0 2px;
+    text-align: center;
+}
+table td{
+    padding: 0 2px;
+    text-align: center;
+}

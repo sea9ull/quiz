@@ -1,0 +1,112 @@
+/* base.css */
+html{
+    padding:0;
+    margin:0;
+}
+body{
+    /*
+    font-family: serif;
+    */
+    font-family: sans-serif;
+    padding:0;
+    margin:0;
+    width: 100vw;
+    /*
+    overflow:hidden;
+    */
+    background : #222;
+    overflow-x:hidden;
+}
+main{
+    position: relative;
+    width: 100vw;
+}
+/* input正常 */
+:focus {
+  outline: 1px dashed #888;
+  outline-offset: 2px;
+}
+input:valid {
+    color: #333;
+    border-color: #ccc;
+    background: #EFEFEF;
+}
+.input-error{
+    display: none;
+    font-size: 0.8rem;
+    color: #c20c33;
+}
+/* input Error */
+input:invalid{
+    color: #630015;
+    border-color: #c20c33;
+    background-color: #ffd9e1;
+}
+input:invalid + .input-error{
+    display:block;
+}
+input {
+    border: 1px solid #3E3E3E;
+    border-radius: 4px;
+    box-sizing: border-box;
+    max-width:100%;
+    min-width:5rem;
+    line-height:normal;
+    margin: 0;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    height: 2.35rem;
+    vertical-align: middle;
+}
+button {
+    appearance: button;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin:0;
+    overflow: visible;
+    padding: 0.4rem 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.contents{
+    width: 100%;
+    max-width:20rem;
+    padding: 40px 10px 0px;
+    margin: 0 auto;
+}
+.content{
+    color:#EFEFEF;
+    width:100%;
+    padding: 14px 8px 16px;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin:20px 0px 10px;
+    text-align:center;
+}
+.bt-submit{
+    color: #EFEFEF;
+    background: #8bb327;
+}
+.input{
+    margin: 25px auto 5px;
+    height: 3.5rem;
+    padding: 0.25rem 0;
+    padding-right: 8px;
+    text-align:center;
+}
+.submit{
+    height: 3.5rem;
+    padding: 0.25rem 0;
+    text-align:center;
+}

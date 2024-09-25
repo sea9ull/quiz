@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>クイズ | 登録</title>
+<script type="text/javascript" src="/resources/js/common.js"></script>
+<script type="text/javascript" src="/resources/js/storage.js"></script>
+<link rel="stylesheet" href="/resources/css/signup.css" />
+</head>
+<body>
+<main>
+<style>
+</style>
+<div class="pane layer visible" id="pane-above">
+    <div class="contents" id="contents">
+        <div class="content">
+            <div class="logo"><img src="/resources/blob/logo.svg" alt="クイズ" width="90%"/></div>
+            <div class="input">
+                <input type="text" id="i-user" placeholder="名前を入力してください"/>
+            </div>
+            <div class="submit">
+                <button class="bt-submit" id="start">はじめる</button>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+</body>
+<script>
+document.getElementById('start')
+        .addEventListener('click', function(e){
+            var user = document.getElementById('i-user').value;
+            var data = {"user": user};
+            post("/api/signup", data, function(response){
+                location.href = "/";
+            });
+        });
+</script>
+</html>

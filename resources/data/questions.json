@@ -1,0 +1,24 @@
+[
+    {
+        "title": "ノンジャンル①",
+        "question": "<p class=\"center\">童話『桃太郎』にて桃太郎のお供は猿、雉と何？</p>",
+        "columns": [
+            {"label": "答", "type": "any"}
+        ],
+        "answer": [
+            ["犬", "いぬ", "イヌ"]
+        ],
+        "answer_text": "犬 "
+    },
+    {
+        "title": "ノンジャンル②",
+        "question": "<div class=\"text\">竹取物語にてかぐや姫の要求した宝物の数はいくつ？</div>",
+        "columns": [
+            {"label": "？", "type": "num"}
+        ],
+        "answer": [
+            ["9"]
+        ],
+        "answer_text": "９"
+    }
+]

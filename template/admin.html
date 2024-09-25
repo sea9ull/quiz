@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>クイズ | 管理ページ</title>
+<script type="text/javascript" src="/resources/js/common.js"></script>
+<script type="text/javascript" src="/resources/js/admin.js"></script>
+<link rel="stylesheet" href="/resources/css/base.css" />
+<link rel="stylesheet" href="/resources/css/admin.css" />
+</head>
+<body class="bg">
+<nav class="admin-menu">
+    <button type="button" class="nav-button" id="quiz-app-reset">設問を初期化</button>
+    <button type="button" class="nav-button" id="quiz-user-reset">回答を消去</button>
+    <button type="button" class="nav-button" id="quiz-user-score">集計</button>
+</nav>
+<main>
+<div class="master-contents" id="playground"></div>
+</main>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function () { init(); });
+</script>
+</html>

@@ -1,0 +1,144 @@
+/* base.css */
+*{
+    box-sizing: border-box;
+}
+html{
+    padding:0;
+    margin:0;
+}
+body{
+    /*
+    font-family: serif;
+    */
+    font-family: sans-serif;
+    padding:0;
+    margin:0 auto;
+    width: 100%;
+    min-height: 100vh;
+    background-color:#323232;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: -1;
+}
+header{
+    width: 100%;
+    height: 40px;
+    padding:0;
+    margin:0;
+}
+main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding:0;
+    margin:0;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+}
+main.margin-header{
+    height: calc(100%-40px)
+}
+nav.nav{
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    z-index: 200;
+    text-align: right;
+}
+
+.pane{
+    position: absolute;
+    width: 100vw;
+    top:0;
+    left:0;
+}
+.layer{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #94712c;
+    transition: .4s ease-in-out;
+    transform: translate(-100%, 0%);
+    z-index:100;
+}
+.layer.visible{
+    transform: translate(0%,0%);
+}
+.dialog{
+    position: fixed;
+    width: 80vw;
+    max-width: 640px;
+    height: 80vh;
+    top:7vh;
+    right:0;
+    left:0;
+    margin: 0 auto;
+    border-radius: 4px;
+    transition: .4s ease-in-out;
+    transform: translate(0%, -150%);
+    z-index:150;
+}
+.dialog.visible{
+    transform: translate(0%,0%);
+}
+.modal{
+    display:none;
+    position: fixed;
+    width: 90vw;
+    height: 90vh;
+    /*
+    max-width: 1080px;
+    max-height: 1080px;
+    */
+    top:5vh;
+    right:0;
+    left:0;
+    margin: 0 auto;
+    border-radius: 4px;
+    z-index: 80;
+}
+.modal.visible{
+    display: block;
+}
+/* input正常 */
+input:valid {
+    color: #333;
+    border-color: #ccc;
+    background: #EFEFEF;
+}
+.input-group{
+    position: relative;
+}
+.input-error{
+    position: absolute;
+    padding: 0.2rem 8px;
+    bottom: -1.5rem;
+    right: 3rem;
+    display: none;
+    font-size: 0.8rem;
+    color: #FFF;
+    background: #c20c33;
+    border-radius: 8px;
+}
+/* input Error */
+input:invalid{
+    color: #630015;
+    border-color: #c20c33;
+    background-color: #ffd9e1;
+}
+input:invalid + .input-error{
+    display:block;
+}
+video{
+    width:100%;
+    height: 100%;
+}
+.toggle-block{
+    display: none;
+}
+.toggle-block.visible{
+    display: block;
+}

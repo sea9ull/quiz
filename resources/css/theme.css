@@ -1,0 +1,226 @@
+/*theme.css*/
+.contents{
+    width: 80%;
+    /*
+    max-width:20rem;
+    */
+    margin: 0 auto;
+}
+.card{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.bg-dot{
+    /* dot */
+    background: #333231;
+    background-image:
+      radial-gradient(#535251 6%, transparent 6%);
+    background-size: 30px 30px;
+}
+.logo{
+    width:100%;
+    margin:0 auto 15px;
+    max-height: 8rem;
+}
+.content{
+    width: 100%;
+    padding: 24px 18px 5rem;
+}
+.content-default{
+    background: #EDEDEF;
+}
+.content-blue{
+    background: #22aee0;
+    color: #FEFEFE;
+}
+.content-red{
+    background: #e0225e;
+    color: #FEFEFE;
+}
+h3.quiz-title{
+    background-image : url('../blob/titlebar.png');
+    background-size : contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 4rem;
+    line-height: 4rem;
+    margin-block-start: 0; 
+    margin-block-end: 1em;
+    color: #EFEFEF;
+}
+.symbol{
+    width: 8rem; 
+    height: 8rem;
+    padding: 5 0 15;
+    margin: 0 auto 30px;
+}
+h3.content-h{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-block-start: 0.6rem; 
+    margin-block-end: 1em;
+}
+div.content-text{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* message */
+.title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-block-start: 0.6rem; 
+    margin-block-end: 1em;
+}
+.message{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    padding:1rem 1.4rem;
+    border:2px solid #222;
+    border-radius: 8px;
+    background: #888;
+    color: #FFF;
+}
+
+/**/
+
+.block{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+.context{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
+.context .context-text{
+    font: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    line-height: 2rem;
+    background: #595555;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 3px #444;
+}
+
+:focus {
+  outline: 1px dashed #888;
+  outline-offset: 2px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+.input-group{
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+}
+.input-group label{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 0.5rem;
+    border: 1px solid #3E3E3E;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+    background: #BBB;
+    box-sizing: border-box;
+    color: #FFF;
+    font-weight: bold;
+    height: 100%;
+}
+.input-group input {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0.5rem;
+    border: 1px solid #3E3E3E;
+    border-radius: 0 4px 4px 0;
+    box-sizing: border-box;
+    line-height:normal;
+    font-size: 1rem;
+    height: 100%;
+    vertical-align: top;
+}
+.input-column{
+    padding: 0.5rem 0;
+}
+.input-column input{
+    max-width:100%;
+    min-width:5rem;
+}
+
+.answer-block {
+    padding-top: 0px;
+}
+.ok{
+    margin-top: 20px;
+    text-align: center;
+}
+/* bt-area */
+.bt-area{
+    display:none;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 1rem;
+}
+.bt-area.visible{
+    display: block;
+}
+
+.submit-column{
+    margin-top: 20px;
+    text-align: center;
+}
+button {
+    appearance: button;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin:0;
+    overflow: visible;
+    padding: 0.4rem 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.bt-submit{
+    color: #EFEFEF;
+    background: #8bb327;
+}
+.bt-ok{
+    color: #EFEFEF;
+    background: #888;
+}
+
+/**/
+.next{
+    margin-bottom: 1rem;
+}
+.nav-button{
+    margin-top: 12px;
+    margin-right: 12px;
+    padding-top: 0.6rem;
+    padding-left: 2.5rem;
+    position: relative;
+    background: #3680a8;
+    color: #FFF;
+    font-weight: bold;
+    height: 2.8rem;
+    border-radius: 1.4rem; 
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}

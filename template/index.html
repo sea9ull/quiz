@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>クイズ</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.min.js"></script>
+<script type="text/javascript" src="/resources/js/common.js"></script>
+<script type="text/javascript" src="/resources/js/storage.js"></script>
+<script type="text/javascript" src="/resources/js/quiz.js"></script>
+<link rel="stylesheet" href="/resources/css/base.css" />
+<link rel="stylesheet" href="/resources/css/theme.css" />
+</head>
+<body class="bg-dot">
+<header>
+    <div class="logo"><img src="/resources/blob/logo.svg" height="4rem"/></div>
+</header>
+<main class="margin-header">
+<div class="contents card">
+    <div id="playground">...</div>
+    <div class="bt-area" id="bt-area">
+        <div class="submit-column">
+          <button type="button" class="bt-submit" data-for="pane-above" id="submit-question">回答</button>
+        </div>
+    </div>
+</div>
+</main>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function () { init(); });
+</script>
+</html>
